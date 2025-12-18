@@ -89,16 +89,6 @@ As described in both the PPT and report:
 (see *Limitations, slides page 9*  and *report section 3* )
 
 
-# Future Work
-
-From both team members’ reflections and project goals:
-
-* train on **realistic large-scale playlists** (e.g., Million Playlist Dataset)
-* implement **hybrid recommendation systems**
-* extend analysis to **multimodal signals** (lyrics, emotional embeddings)
-
-(*slides page 11* and *report, section 4* )
-
 # Design
 
 The project includes an interactive user interface built with Gradio, designed to expose the behavior of the implemented recommendation models in an intuitive way.
@@ -111,7 +101,18 @@ The interface is organized according to the three historical stages of recommend
 
 The UI design emphasizes a clear separation between user interaction and model computation, using step-by-step inputs and structured outputs to support exploration, explanation, and comparison.
 
-(*slides page 12,13,14*)
+(*slides page 10,11,12 and report section 4*)
+
+
+# Future Work
+
+From both team members’ reflections and project goals:
+
+* train on **realistic large-scale playlists** (e.g., Million Playlist Dataset)
+* implement **hybrid recommendation systems**
+* extend analysis to **multimodal signals** (lyrics, emotional embeddings)
+
+(*report, section 5* )
 
 # Contributions
 
