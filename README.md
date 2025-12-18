@@ -11,7 +11,7 @@ Music recommendation systems evolved from **hand-crafted feature similarity**, t
 Our goal was to rebuild these three eras from scratch, under a unified experimental framework.
 
 
-### 📊 Dataset & Preprocessing
+### Dataset & Preprocessing
 
 We use the **Kaggle 30,000 Spotify Songs** dataset (≈30k tracks after cleaning).
 Each track contains 10 normalized audio features (danceability, energy, valence, tempo, etc.) along with metadata such as artist and playlist genre.
@@ -24,7 +24,7 @@ Key preprocessing steps:
 
 (see dataset overview in the *slides, page 5* )
 
-# 🔧 Models Implemented
+# Models Implemented
 
 ### 1. Content-Based Filtering
 
@@ -61,7 +61,7 @@ We trained two variants:
 
 t-SNE visualization of learned embeddings is shown on *slides, page 8* .
 
-# 🧠 Results & Insights
+# Results & Insights
 
 Across the three paradigms, similarity is defined differently:
 
@@ -89,20 +89,31 @@ As described in both the PPT and report:
 (see *Limitations, slides page 9*  and *report section 3* )
 
 
-# 🔮 Future Work
+# Future Work
 
 From both team members’ reflections and project goals:
 
-* design a **custom neural architecture** beyond Word2Vec
-* build a **unified graphical interface** to explore recommendations interactively
 * train on **realistic large-scale playlists** (e.g., Million Playlist Dataset)
 * implement **hybrid recommendation systems**
 * extend analysis to **multimodal signals** (lyrics, emotional embeddings)
 
 (*slides page 11* and *report, section 4* )
 
+# Design
 
-# 👥 Contributions
+The project includes an interactive user interface built with Gradio, designed to expose the behavior of the implemented recommendation models in an intuitive way.
+
+The interface is organized according to the three historical stages of recommender systems, each represented as a dedicated tab:
+
+* Stage 1 – Content-Based Filtering, focusing on interpretable, feature-based similarity;
+* Stage 2 – Collaborative Filtering, structured into multiple sub-tabs to reflect different behavioral assumptions (SVD, Similar Users, Co-Listening);
+* Stage 3 – Neural / Contextual Filtering, enabling exploration of semantic relationships through Word2Vec-based interactions.
+
+The UI design emphasizes a clear separation between user interaction and model computation, using step-by-step inputs and structured outputs to support exploration, explanation, and comparison.
+
+(*slides page 12,13,14*)
+
+# Contributions
 
 ### **Andra Mihaela Andruță**
 
@@ -125,7 +136,7 @@ From both team members’ reflections and project goals:
 (*slides page 4* )
 
 
-# 🛠️ How to Run
+# How to Run
 
 All experiments were executed in **Google Colab**.
 
