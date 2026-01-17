@@ -91,17 +91,26 @@ As described in both the PPT and report:
 
 # Design
 
-The project includes an interactive user interface built with Gradio, designed to expose the behavior of the implemented recommendation models in an intuitive way.
+The project features an interactive user interface built with **Gradio**, created to transform the implemented recommendation algorithms into an intuitive, exploratory application.
 
-The interface is organized according to the three historical stages of recommender systems, each represented as a dedicated tab:
+The interface is structured to mirror the **historical evolution of recommender systems**, with each paradigm exposed through a dedicated tab:
 
-* Stage 1 – Content-Based Filtering, focusing on interpretable, feature-based similarity;
-* Stage 2 – Collaborative Filtering, structured into multiple sub-tabs to reflect different behavioral assumptions (SVD, Similar Users, Co-Listening);
-* Stage 3 – Neural / Contextual Filtering, enabling exploration of semantic relationships through Word2Vec-based interactions.
+- **Stage 1 – Content-Based Filtering**  
+  Focuses on interpretable, feature-based similarity using audio descriptors and cosine distance.
 
-The UI design emphasizes a clear separation between user interaction and model computation, using step-by-step inputs and structured outputs to support exploration, explanation, and comparison.
+- **Stage 2 – Collaborative Filtering**  
+  Organized into multiple sub-tabs to reflect different behavioral assumptions, including:
+  SVD-based latent factor recommendations, user–user similarity, and co-listening patterns.
 
-(*slides page 10,11,12 and report section 4*)
+- **Stage 3 – Neural / Contextual Filtering**  
+  Enables exploration of semantic relationships through Word2Vec embeddings, including
+  song similarity, genre compatibility, and semantic transition playlists.
+
+The UI design emphasizes a **clear separation between model computation and user interaction**.
+Each component follows a step-by-step interaction pattern (explicit inputs and structured outputs),
+supporting **exploration, explanation, and direct comparison** between recommendation paradigms.
+
+*(see slides pages 10–12 and report section 4)*
 
 
 # Future Work
@@ -123,6 +132,7 @@ From both team members’ reflections and project goals:
 * CBF implementation
 * PCA & word cloud analysis
 * Word2Vec training + semantic playlist transitions
+* co-design and implementation of the interactive Gradio user interface
 
 (*slides page 3* )
 
@@ -133,6 +143,7 @@ From both team members’ reflections and project goals:
 * top-N recommendations
 * popularity vs personalization evaluation
 * comparative study CBF vs CF
+* co-design and implementation of the interactive Gradio user interface
 
 (*slides page 4* )
 
